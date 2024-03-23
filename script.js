@@ -24,3 +24,12 @@ function receberQuantidadePessoas(evento) {
         pessoas = Number(evento.target.value)
     }
 }
+
+const botõesGorjeta = document.querySelectorAll(".gorjeta input[type='button']")
+botõesGorjeta.forEach(botao => {
+    botao.addEventListener("click", receberporcentagem)
+})
+
+function receberporcentagem(evento) {
+    console.log(evento.target.value)
+}
